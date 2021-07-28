@@ -7,10 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AdorableAvatar {
-        "eyes": string;
-        "mouth": string;
         "name": string;
-        "nose": string;
         "rounded": boolean;
         "size": number;
     }
@@ -28,10 +25,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AdorableAvatar {
-        "eyes"?: string;
-        "mouth"?: string;
         "name"?: string;
-        "nose"?: string;
         "rounded"?: boolean;
         "size"?: number;
     }

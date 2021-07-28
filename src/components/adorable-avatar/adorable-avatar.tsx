@@ -1,5 +1,5 @@
 import { Component, Host, h, Prop, State, getAssetPath } from '@stencil/core';
-import { getColor, getRandomString } from '../../utils/utils';
+import { getColor, getEyes, getNose, getMouth, getRandomString } from '../../utils/utils';
 
 @Component({
   tag: 'adorable-avatar',
@@ -10,16 +10,20 @@ import { getColor, getRandomString } from '../../utils/utils';
 export class AdorableAvatar {
   @Prop() name: string = getRandomString();
   @Prop() size: number = 120;
-  @Prop() eyes = "eyes1.png";
-  @Prop() nose = "nose2.png";
-  @Prop() mouth = "mouth10.png";
   @Prop() rounded: boolean = false;
-
+  
   @State() color: string;
-  componentDidLoad() {
-    this.color = getColor(this.name)
-  }
+  @State() eyes = "eyes1.png";
+  @State() nose = "nose2.png";
+  @State() mouth = "mouth10.png";
 
+  componentDidLoad() {
+    this.color = getColor(this.name);
+    this.eyes = getEyes(this.name);
+    this.nose = getNose(this.name);
+    this.mouth = getMouth(this.name);
+
+  }
 
   render() {
     return (
