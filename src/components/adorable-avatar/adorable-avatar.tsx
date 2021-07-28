@@ -13,11 +13,14 @@ export class AdorableAvatar {
   @Prop() rounded: boolean = false;
 
   @Prop() src: string = null;
+  @Prop() lazyLoadingColor = null;
+
 
   @State() color: string;
-  @State() eyes = "eyes1.png";
-  @State() nose = "nose2.png";
-  @State() mouth = "mouth10.png";
+  @State() eyes: string;
+  @State() nose: string;
+  @State() mouth: string;
+
 
   componentDidLoad() {
     this.color = getColor(this.name);
@@ -37,10 +40,12 @@ export class AdorableAvatar {
                 src={this.src}
                 alt={this.name}
                 style={{
+                  backgroundColor: this.lazyLoadingColor?this.lazyLoadingColor:this.color,
                   width: this.size + "px",
                   height: this.size + "px",
                   borderRadius: this.rounded && "50%"
                 }}
+                loading="lazy"
                 onError={() => this.src = null} />
             ) : (
               <div class="container" style={{

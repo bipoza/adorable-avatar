@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AdorableAvatar {
+        "lazyLoadingColor": any;
         "name": string;
         "rounded": boolean;
         "size": number;
@@ -26,6 +27,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AdorableAvatar {
+        "lazyLoadingColor"?: any;
         "name"?: string;
         "rounded"?: boolean;
         "size"?: number;

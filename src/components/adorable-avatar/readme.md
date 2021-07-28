@@ -7,12 +7,13 @@
 
 ## Properties
 
-| Property  | Attribute | Description | Type      | Default                                                                 |
-| --------- | --------- | ----------- | --------- | ----------------------------------------------------------------------- |
-| `name`    | `name`    |             | `string`  | `getRandomString()`                                                     |
-| `rounded` | `rounded` |             | `boolean` | `false`                                                                 |
-| `size`    | `size`    |             | `number`  | `120`                                                                   |
-| `src`     | `src`     |             | `string`  | `'https://www.codesyntax.com/++theme++codesyntax-theme/img/bittor.jpg'` |
+| Property        | Attribute         | Description | Type      | Default             |
+| --------------- | ----------------- | ----------- | --------- | ------------------- |
+| `lazyLoadColor` | `lazy-load-color` |             | `any`     | `null`              |
+| `name`          | `name`            |             | `string`  | `getRandomString()` |
+| `rounded`       | `rounded`         |             | `boolean` | `false`             |
+| `size`          | `size`            |             | `number`  | `120`               |
+| `src`           | `src`             |             | `string`  | `null`              |
 
 
 ----------------------------------------------
