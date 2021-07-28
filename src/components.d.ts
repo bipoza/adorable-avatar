@@ -10,6 +10,7 @@ export namespace Components {
         "name": string;
         "rounded": boolean;
         "size": number;
+        "src": string;
     }
 }
 declare global {
@@ -28,6 +29,7 @@ declare namespace LocalJSX {
         "name"?: string;
         "rounded"?: boolean;
         "size"?: number;
+        "src"?: string;
     }
     interface IntrinsicElements {
         "adorable-avatar": AdorableAvatar;
