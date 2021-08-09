@@ -1,4 +1,4 @@
-import { defaultColors, defaultEyes, defaultNose, defaultMouth } from "../constats";
+import { defaultColors, defaultEyes, defaultNose, defaultMouth } from "../constants";
 
 // Create hash code from ID
 export function hashCode(str) {
