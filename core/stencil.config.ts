@@ -13,7 +13,8 @@ export const config: Config = {
       esmLoaderPath: '../loader',
       copy: [
         { src: '**/*.scss' },
-        { src: 'assets'}
+        { src: 'assets' },
+        { src: 'assets', dest: '../angular/assets' }
       ],
     },
     {

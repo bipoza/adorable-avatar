@@ -1,0 +1,22 @@
+{
+  "name": "@adorable-avatar/base",
+  "version": "1.0.0",
+  "description": "Set of scripts to aid compilation",
+  "scripts": {
+    "prestart": "source $HOME/.nvm/nvm.sh; nvm use",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "core-build": "cd core && npm run build",
+    "ng-build": "cd angular && npm install && npm run packagr",
+    "complete-build":"npm run core-build && npm run ng-build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bipoza/adorable-avatars-wc.git"
+  },
+  "author": "bipoza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bipoza/adorable-avatars-wc/issues"
+  },
+  "homepage": "https://github.com/bipoza/adorable-avatars-wc#readme"
+}
