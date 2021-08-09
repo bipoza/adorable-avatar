@@ -13,8 +13,8 @@ export const config: Config = {
       esmLoaderPath: '../loader',
       copy: [
         { src: '**/*.scss' },
-        { src: 'assets' },
-        { src: 'assets', dest: '../angular/assets' }
+        { src: '**/assets' },
+        { src: '**/assets', dest: '../angular/assets' }
       ],
     },
     {
@@ -22,7 +22,11 @@ export const config: Config = {
     },
     {
       type: 'docs-readme',
-    }
+    },
+    {
+      type: 'www',
+      serviceWorker: null, // disable service workers
+    },
   ],
   plugins: [
     sass()
