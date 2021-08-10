@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
   <title>Stencil Component Starter</title>
 
-  <script type="module" src="/build/adorable-avatars.esm.js"></script>
-  <script nomodule src="/build/adorable-avatars.js"></script>
+  <script type="module" src="/build/adorable-avatar.esm.js"></script>
+  <script nomodule src="/build/adorable-avatar.js"></script>
 
   <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
   <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
@@ -17,7 +17,7 @@
 
 <style>
   adorable-avatar{
-    --skeleton-background:red !important;
+    /* --skeleton-background:red !important; */
   }
 </style>
 </head>
@@ -76,9 +76,9 @@
 
   <adorable-avatar name="test" rounded></adorable-avatar>
 
-  <adorable-avatar name="bittor"></adorable-avatar>
+  <adorable-avatar name="bittor" initials color="blue" rounded></adorable-avatar>
 
-  <adorable-avatar name="bittor" src="https://www.codesyntax.com/++theme++codesyntax-theme/img/bittor.jpg">
+  <adorable-avatar name="bittor" src="https://www.codesyntax.com/++theme++codesyntax-theme/img/bittor.jpg" >
   </adorable-avatar>
 
   <adorable-avatar name="bittor" src="https://www.codesyntax.com/++theme++codesyntax-theme/img/bittor.jpg" rounded>
@@ -86,7 +86,7 @@
 
 
 
-  <br>
+  <!-- <br> -->
   Loading Color #dddddd
   <adorable-avatar name="bittor" src="https://www.codesyntax.com/++theme++codesyntax-theme/img/bittor.jpg" rounded>
   </adorable-avatar>

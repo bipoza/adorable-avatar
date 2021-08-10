@@ -7,6 +7,8 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AdorableAvatar {
+        "color": string;
+        "initials": boolean;
         "name": string;
         "rounded": boolean;
         "size": number;
@@ -26,6 +28,8 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AdorableAvatar {
+        "color"?: string;
+        "initials"?: boolean;
         "name"?: string;
         "rounded"?: boolean;
         "size"?: number;

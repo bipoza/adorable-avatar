@@ -22,6 +22,20 @@
 }
 
 
+.initials span{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  font-family: roboto, arial;
+  font-weight: 600;
+  // font-size: 4vw;
+  color:white;  
+}
+
+
 .skeleton-loading{
   cursor: progress; 
   background: 
