@@ -4,38 +4,52 @@ import { defaultColors, defaultEyes, defaultNose, defaultMouth } from "../consta
 export function hashCode(str) {
   var hash = 0;
   for (var i = 0; i < str.length; i++) {
-     hash = str.charCodeAt(i) + ((hash >> 5) - hash);
+    hash = str.charCodeAt(i) + ((hash >> 5) - hash);
   }
   return hash;
-} 
-
-
-export function getIntFromInterval(integer, max) { 
-  return Math.floor(parseFloat('0.'+integer) * max);
 }
 
 
-export function getColor(name:string){
+export function getIntFromInterval(integer, max) {
+  return Math.floor(parseFloat('0.' + integer) * max);
+}
+
+
+export function getColor(name: string) {
   let colorIndex = getIntFromInterval(hashCode(name), defaultColors.length);
   return defaultColors[colorIndex]
 }
 
-export function getEyes(name:string){
+export function getEyes(name: string) {
   let colorIndex = getIntFromInterval(hashCode(name), defaultEyes.length);
   return defaultEyes[colorIndex]
 }
 
-export function getNose(name:string){
+export function getNose(name: string) {
   let colorIndex = getIntFromInterval(hashCode(name), defaultNose.length);
   return defaultNose[colorIndex]
 }
 
-export function getMouth(name:string){
+export function getMouth(name: string) {
   let colorIndex = getIntFromInterval(hashCode(name), defaultMouth.length);
   return defaultMouth[colorIndex]
 }
 
 
-export function getRandomString(limit=7): string{
+export function getRandomString(limit = 7): string {
   return Math.random().toString(36).substring(limit);
+}
+
+export function getInitials(name): string {
+  var parts = name.split(' ');
+  console.log("Part: ", parts)
+  var initials = ''
+  for (var i = 0; i < parts.length; i++) {
+    if (parts[i].length > 0 && parts[i] !== '') {
+      initials += parts[i][0]
+      if (parts.length === 1)
+        initials += parts[i][1]
+    }
+  }
+  return initials.toUpperCase();
 }
