@@ -1,0 +1,38 @@
+{
+  "name": "@adorable-avatar/angular",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ionic-team/ionic.git"
+  },
+  "module_ivy_ngcc": "__ivy_ngcc__/fesm2015/adorable-avatar-angular.js",
+  "module": "fesm2015/adorable-avatar-angular.js",
+  "main": "bundles/adorable-avatar-angular.umd.js",
+  "types": "dist/core.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "@adorable-avatar/core": "file:/home/bipoza/Dokumentuak/garapena/stenciljs/adorable-avatar/core",
+    "tslib": "^1.9.3"
+  },
+  "es2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/adorable-avatar-angular.js",
+  "es2015": "fesm2015/adorable-avatar-angular.js",
+  "esm2015": "esm2015/adorable-avatar-angular.js",
+  "fesm2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/adorable-avatar-angular.js",
+  "fesm2015": "fesm2015/adorable-avatar-angular.js",
+  "typings": "adorable-avatar-angular.d.ts",
+  "metadata": "adorable-avatar-angular.metadata.json",
+  "sideEffects": false,
+  "__processed_by_ivy_ngcc__": {
+    "es2015": "12.2.0",
+    "fesm2015": "12.2.0",
+    "module": "12.2.0",
+    "typings": "12.2.0"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
+  }
+}

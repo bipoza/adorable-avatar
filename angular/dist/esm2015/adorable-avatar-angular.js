@@ -1,0 +1,6 @@
+/**
+ * Generated bundle index. Do not edit.
+ */
+export * from './public-api';
+export { ProxyCmp as ɵa } from './directives/angular-component-lib/utils';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYWRvcmFibGUtYXZhdGFyLWFuZ3VsYXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvYWRvcmFibGUtYXZhdGFyLWFuZ3VsYXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUFFSCxjQUFjLGNBQWMsQ0FBQztBQUU3QixPQUFPLEVBQUMsUUFBUSxJQUFJLEVBQUUsRUFBQyxNQUFNLDBDQUEwQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBHZW5lcmF0ZWQgYnVuZGxlIGluZGV4LiBEbyBub3QgZWRpdC5cbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL3B1YmxpYy1hcGknO1xuXG5leHBvcnQge1Byb3h5Q21wIGFzIMm1YX0gZnJvbSAnLi9kaXJlY3RpdmVzL2FuZ3VsYXItY29tcG9uZW50LWxpYi91dGlscyc7Il19

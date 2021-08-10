@@ -1,0 +1,29 @@
+Lifecycle scripts included in @adorable-avatars/angular:
+  test
+    echo 'angular no tests yet'
+
+available via `npm run-script`:
+  build
+    npm run build.ng
+  build.fesm
+    rollup --config ./scripts/rollup.config.js
+  build.ng
+    npm run build.es2015 && npm run build.es5
+  build.es2015
+    ngc -p tsconfig.json && rollup --config ./scripts/rollup.config.js
+  build.es5
+    ngc -p tsconfig.legacy.json && rollup --config ./scripts/rollup.config.legacy.js
+  lint
+    npm run lint.ts
+  lint.ts
+    tslint --project .
+  lint.fix
+    tslint --project . --fix
+  prerelease
+    npm run validate && np prerelease --yolo --any-branch --tag next
+  tsc
+    tsc -p .
+  validate
+    npm i && npm run lint && npm run test && npm run build
+  packagr
+    ng-packagr -p ng-package.json
