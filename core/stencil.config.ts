@@ -1,12 +1,19 @@
 import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
 import { angularOutputTarget } from '@stencil/angular-output-target';
+import { reactOutputTarget } from '@stencil/react-output-target';
+
 export const config: Config = {
   namespace: 'adorable-avatar',
   outputTargets: [
     angularOutputTarget({
       componentCorePackage: '@adorable-avatar/core',
       directivesProxyFile: '../angular/src/directives/proxies.ts',
+    }),
+    reactOutputTarget({
+      componentCorePackage: '@adorable-avatar/core',
+      proxiesFile: '../react/src/components.ts',
+      includeDefineCustomElements: true,
     }),
     {
       type: 'dist',
