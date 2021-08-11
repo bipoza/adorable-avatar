@@ -21,7 +21,8 @@ export const config: Config = {
       copy: [
         { src: '**/*.scss' },
         { src: '**/assets' },
-        { src: '**/assets', dest: '../angular/assets' }
+        { src: '**/assets', dest: '../angular/assets' },
+        { src: '**/assets', dest: '../react/dist/assets' }
       ],
     },
     {
