@@ -18,12 +18,12 @@ export const config: Config = {
     {
       type: 'dist',
       esmLoaderPath: '../loader',
-      copy: [
-        { src: '**/*.scss' },
-        { src: '**/assets' },
-        { src: '**/assets', dest: '../angular/assets' },
-        { src: '**/assets', dest: '../react/dist/assets' }
-      ],
+      // copy: [
+      //   { src: '**/*.scss' },
+      //   { src: '**/assets' },
+      //   { src: '**/assets', dest: '../angular/assets' },
+      //   { src: '**/assets', dest: '../react/dist/assets' }
+      // ],
     },
     {
       type: 'dist-custom-elements-bundle',

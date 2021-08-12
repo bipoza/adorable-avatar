@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, State, getAssetPath } from '@stencil/core';
+import { Component, Host, h, Prop, State } from '@stencil/core';
 import { getColor, getEyes, getNose, getMouth, getRandomString, getInitials } from '../../utils/utils';
 import images from '../../base64_assets.js';
 
