@@ -1,7 +1,7 @@
 {
   "name": "@adorable-avatar/core",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "Adorable avatar web component core",
   "main": "dist/index.cjs.js",
   "module": "dist/custom-elements/index.js",
   "es2015": "dist/esm/index.mjs",
@@ -27,6 +27,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@stencil/angular-output-target": "0.0.7"
+    "@stencil/angular-output-target": "0.0.7",
+    "@stencil/react-output-target": "0.0.9"
   }
 }
