@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/bipoza/adorable-avatars/issues"
   },
-  "homepage": "https://github.com/bipoza/adorable-avatars#readme"
+  "homepage": "https://github.com/bipoza/adorable-avatars#readme",
+  "devDependencies": {
+    "@types/node": "^16.6.0"
+  }
 }

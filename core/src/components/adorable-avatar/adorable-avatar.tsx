@@ -1,5 +1,6 @@
-import { Component, Host, h, Prop, State, getAssetPath } from '@stencil/core';
+import { Component, Host, h, Prop, State } from '@stencil/core';
 import { getColor, getEyes, getNose, getMouth, getRandomString, getInitials } from '../../utils/utils';
+import images from '../../base64_assets.js';
 
 @Component({
   tag: 'adorable-avatar',
@@ -23,11 +24,11 @@ export class AdorableAvatar {
   @State() mouth: string;
 
 
-  componentDidLoad() {
+  componentWillLoad() {
     this.color = this.color || getColor(this.name);
-    this.eyes = getEyes(this.name);
-    this.nose = getNose(this.name);
-    this.mouth = getMouth(this.name);
+    this.eyes = images['eyes'].filter(item => item.name === getEyes(this.name))[0];
+    this.nose = images['nose'].filter(item => item.name === getNose(this.name))[0];
+    this.mouth = images['mouth'].filter(item => item.name === getMouth(this.name))[0];
   }
 
   InitialsAvatar = () => {
@@ -39,7 +40,7 @@ export class AdorableAvatar {
         borderRadius: this.rounded && "50%"
       }}>
         <div class="initials">
-          <span style={{fontSize: this.size / 2.5 + 'px' }}>{getInitials(this.name)}</span>
+          <span style={{ fontSize: this.size / 2.5 + 'px' }}>{getInitials(this.name)}</span>
         </div>
       </div>
     );
@@ -70,9 +71,9 @@ export class AdorableAvatar {
         borderRadius: this.rounded && "50%"
       }}>
         <div class="face">
-          <img src={getAssetPath(`./assets/eyes/${this.eyes}`)} />
-          <img src={getAssetPath(`./assets/nose/${this.nose}`)} />
-          <img src={getAssetPath(`./assets/mouth/${this.mouth}`)} />
+          <img src={`data:image/png;base64, ${this.eyes['base64']}`} />
+          <img src={`data:image/png;base64, ${this.nose['base64']}`} />
+          <img src={`data:image/png;base64, ${this.mouth['base64']}`} />
         </div>
       </div>
     );
