@@ -1,28 +1,28 @@
 :host {
   display: block;
 
-  
   --skeleton-background: #dddddd;
-
 }
 
-
-.container{
+.container {
   position: relative;
 }
 
-
-.face img{
-    position: absolute;
-    width:100%; height:100%;
-    right: 10px;
-    left: 0;
-    top:0;
-    bottom:10px;
+.face img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 10px;
+  left: 0;
+  top: 0;
+  bottom: 10px;
 }
 
+.image-cover {
+  object-fit: cover;
+}
 
-.initials span{
+.initials span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -32,24 +32,22 @@
   font-family: roboto, arial;
   font-weight: 600;
   // font-size: 4vw;
-  color:white;  
+  color: white;
 }
 
-
-.skeleton-loading{
-  cursor: progress; 
-  background: 
-    linear-gradient(0.25turn, transparent, #fff, transparent),
+.skeleton-loading {
+  cursor: progress;
+  background: linear-gradient(0.25turn, transparent, #fff, transparent),
     linear-gradient(var(--skeleton-background), var(--skeleton-background)),
     radial-gradient(38px circle at 19px 19px, var(--skeleton-background) 50%, transparent 51%),
-    linear-gradient(var(--skeleton-background), var(--skeleton-background));  
-  background-repeat: no-repeat;
-  background-size: 315px 250px, 315px 180px, 100px 100px, 225px 30px; 
-  background-position: -315px 0, 0 0, 0px 190px, 50px 195px; 
+    linear-gradient(var(--skeleton-background), var(--skeleton-background));
+  // background-repeat: no-repeat;
+  // background-size: 315px 250px, 315px 180px, 100px 100px, 225px 30px;
+  // background-position: -315px 0, 0 0, 0px 190px, 50px 195px;
   animation: loading 1.5s infinite;
 }
 
-@keyframes loading {  
+@keyframes loading {
   to {
     background-position: 315px 0, 0 0, 0 190px, 50px 195px;
   }

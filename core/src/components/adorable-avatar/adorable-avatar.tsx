@@ -11,10 +11,9 @@ import images from '../../base64_assets.js';
 export class AdorableAvatar {
   @Prop() name: string = getRandomString();
   @Prop() size: number = 120;
-  @Prop() rounded: boolean = false;
+  @Prop() shape: 'round' | 'square' = 'square';
 
-  @Prop() initials: boolean = false;
-
+  @Prop() mode: 'initials' | 'default' = 'default';
   @Prop() src: string = null;
   @Prop() color: string;
 
@@ -37,7 +36,7 @@ export class AdorableAvatar {
         backgroundColor: this.color,
         width: this.size + "px",
         height: this.size + "px",
-        borderRadius: this.rounded && "50%"
+        borderRadius: this.shape === 'round' && "50%"
       }}>
         <div class="initials">
           <span style={{ fontSize: this.size / 2.5 + 'px' }}>{getInitials(this.name)}</span>
@@ -54,10 +53,10 @@ export class AdorableAvatar {
         style={{
           width: this.size + "px",
           height: this.size + "px",
-          borderRadius: this.rounded && "50%"
+          borderRadius: this.shape === 'round' && "50%"
         }}
         loading="lazy"
-        class="skeleton-loading"
+        class="skeleton-loading image-cover"
         onError={() => this.src = null} />
     );
   }
@@ -68,7 +67,7 @@ export class AdorableAvatar {
         backgroundColor: this.color,
         width: this.size + "px",
         height: this.size + "px",
-        borderRadius: this.rounded && "50%"
+        borderRadius: this.shape === 'round' && "50%"
       }}>
         <div class="face">
           <img src={`data:image/png;base64, ${this.eyes['base64']}`} />
@@ -87,7 +86,7 @@ export class AdorableAvatar {
             this.src ? (
               <this.ImgAvatar />
             ) : (
-              this.initials ? (
+              this.mode === 'initials' ? (
                 <this.InitialsAvatar />
               ) : (
                 <this.AdorableAvatar />
