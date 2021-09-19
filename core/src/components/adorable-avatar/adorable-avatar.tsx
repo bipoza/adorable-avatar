@@ -13,7 +13,7 @@ export class AdorableAvatar {
   @Prop() size: number = 120;
   @Prop() shape: 'round' | 'square' = 'square';
 
-  @Prop() mode: 'initials' | 'default' = 'default';
+  @Prop() type: 'initials' | 'default' = 'default';
   @Prop() src: string = null;
   @Prop() color: string;
 
@@ -86,7 +86,7 @@ export class AdorableAvatar {
             this.src ? (
               <this.ImgAvatar />
             ) : (
-              this.mode === 'initials' ? (
+              this.type === 'initials' ? (
                 <this.InitialsAvatar />
               ) : (
                 <this.AdorableAvatar />

@@ -8,11 +8,11 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AdorableAvatar {
         "color": string;
-        "mode": 'initials' | 'default';
         "name": string;
         "shape": 'round' | 'square';
         "size": number;
         "src": string;
+        "type": 'initials' | 'default';
     }
 }
 declare global {
@@ -29,11 +29,11 @@ declare global {
 declare namespace LocalJSX {
     interface AdorableAvatar {
         "color"?: string;
-        "mode"?: 'initials' | 'default';
         "name"?: string;
         "shape"?: 'round' | 'square';
         "size"?: number;
         "src"?: string;
+        "type"?: 'initials' | 'default';
     }
     interface IntrinsicElements {
         "adorable-avatar": AdorableAvatar;
