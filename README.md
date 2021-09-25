@@ -24,9 +24,10 @@ Via npm:
 ```
 
 Via CDN:
-```bash
-  <script src="...."></script>
+```html
+  <script src="https://cdn.jsdelivr.net/npm/@adorable-avatar/core/dist/adorable-avatars/adorable-avatars.esm.js"></script>
 ```
+
 
 ### Angular
 
@@ -45,6 +46,12 @@ Via CDN:
 <br>
 
 ## Usage/Examples
+
+### HTML
+```html
+  <adorable-avatar name="bipoza" shape="round"></adorable-avatar>
+```
+
 
 ### React
 ```javascript
