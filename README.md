@@ -25,7 +25,7 @@ Via npm:
 
 Via CDN:
 ```html
-  <script src="https://cdn.jsdelivr.net/npm/@adorable-avatar/core/dist/adorable-avatars/adorable-avatars.esm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@adorable-avatar/core@0.0.1/dist/adorable-avatar/adorable-avatar.esm.js"></script>
 ```
 
 
