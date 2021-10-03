@@ -6,13 +6,8 @@ Automatic avatar generator for any web frontend! For Angular, React, Vue and HTM
 
 Based on the project https://github.com/itsthatguy/avatars-api-middleware this component has been created to be used directly on the frontend without the need to maintain a server.
 
-<br>
+![Example](./docs/example.png)
 
-## Demo
-
-Insert gif or link to demo
-
-<br>
 
 ## Installation
 
