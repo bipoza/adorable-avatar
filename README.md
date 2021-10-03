@@ -15,27 +15,27 @@ Based on the project https://github.com/itsthatguy/avatars-api-middleware this c
 
 Via npm:
 ```bash
-  npm install @adorable-avatar/core
+npm install @adorable-avatar/core
 ```
 
 Via CDN:
 ```html
-  <script src="https://cdn.jsdelivr.net/npm/@adorable-avatar/core@0.0.1/dist/adorable-avatar/adorable-avatar.esm.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@adorable-avatar/core@0.0.1/dist/adorable-avatar/adorable-avatar.esm.js"></script>
 ```
 
 
-### Angular
+### Angular (Working on the documentation)
 
 ```bash
-  npm install @adorable-avatar/angular
-  ...
+npm install @adorable-avatar/angular
+...
 ```
 
-### React
+### React (Working on the documentation)
 
 ```bash
-  npm install @adorable-avatar/react
-  ...
+npm install @adorable-avatar/react
+...
 ```
 
 <br>
@@ -44,8 +44,10 @@ Via CDN:
 
 ### HTML
 ```html
-  <adorable-avatar name="bipoza" shape="round"></adorable-avatar>
+<adorable-avatar name="bipoza" shape="round"></adorable-avatar>
 ```
+![User Example](./docs/user_example.png)
+
 
 
 ### React
@@ -58,7 +60,7 @@ function App() {
 ```
 
   
-## Documentation
+## Documentation (WIP)
 
 [Documentation](https://linktodocumentation)
 
