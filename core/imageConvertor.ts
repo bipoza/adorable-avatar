@@ -12,7 +12,6 @@ function getAssetsElements() {
     });
     images[subfolder] = folder_items;
   });
-  console.log("FILES: ", images);
   return images;
 }
 function convertToBase64(assets) {

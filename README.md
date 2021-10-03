@@ -20,7 +20,7 @@ npm install @adorable-avatar/core
 
 Via CDN:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@adorable-avatar/core@0.0.1/dist/adorable-avatar/adorable-avatar.esm.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@adorable-avatar/core@0.0.2/dist/adorable-avatar/adorable-avatar.esm.js"></script>
 ```
 
 
@@ -42,7 +42,7 @@ npm install @adorable-avatar/react
 
 ## Usage/Examples
 
-### HTML
+### HTML [Example](https://codesandbox.io/s/adorable-avatar-core-html-pz8no?file=/index.html:259-274)
 ```html
 <adorable-avatar name="bipoza" shape="round"></adorable-avatar>
 ```

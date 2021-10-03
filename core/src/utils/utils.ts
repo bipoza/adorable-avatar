@@ -42,7 +42,6 @@ export function getRandomString(limit = 7): string {
 
 export function getInitials(name): string {
   var parts = name.split(' ');
-  console.log("Part: ", parts)
   var initials = ''
   for (var i = 0; i < parts.length; i++) {
     if (parts[i].length > 0 && parts[i] !== '') {
