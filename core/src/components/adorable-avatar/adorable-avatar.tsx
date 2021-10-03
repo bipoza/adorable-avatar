@@ -1,12 +1,11 @@
 import { Component, Host, h, Prop, State } from '@stencil/core';
 import { getColor, getEyes, getNose, getMouth, getRandomString, getInitials } from '../../utils/utils';
-import images from '../../base64_assets.js';
+import * as images from '../../base64_assets.json';
 
 @Component({
   tag: 'adorable-avatar',
   styleUrl: 'adorable-avatar.scss',
-  shadow: true,
-  assetsDirs: ['assets']
+  shadow: true
 })
 export class AdorableAvatar {
   @Prop() name: string = getRandomString();
@@ -18,9 +17,9 @@ export class AdorableAvatar {
   @Prop() color: string;
 
 
-  @State() eyes: string;
-  @State() nose: string;
-  @State() mouth: string;
+  @State() eyes: { name: string; base64: string; };
+  @State() nose: { name: string; base64: string; };
+  @State() mouth: { name: string; base64: string; };
 
 
   componentWillLoad() {

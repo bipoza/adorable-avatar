@@ -1,5 +1,5 @@
 const fs = require('fs');
-const baseAssetsPath = './core/assets/';
+const baseAssetsPath = './assets/';
 function getAssetsElements() {
   let images = {};
   let baseFolder = fs.readdirSync(baseAssetsPath);
@@ -12,7 +12,6 @@ function getAssetsElements() {
     });
     images[subfolder] = folder_items;
   });
-  console.log("FILES: ", images);
   return images;
 }
 function convertToBase64(assets) {
@@ -27,9 +26,9 @@ function convertToBase64(assets) {
     images[key] = folder_images;
   });
   let data = JSON.stringify(images);
-  let all = `const data = ${data} 
-  export default data;`;
-  fs.writeFileSync('./core/src/base64_assets.js', all);
+  // let all = `const data = ${data} 
+  // export default data;`;
+  fs.writeFileSync('./src/base64_assets.json', data);
   console.log("Base images: ", images);
   // convert binary data to base64 encoded string
   // return Buffer.from(bitmap).toString('base64');

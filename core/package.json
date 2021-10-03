@@ -1,7 +1,15 @@
 {
   "name": "@adorable-avatar/core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Adorable avatar web component core",
+  "keywords": [
+    "stenciljs",
+    "webcomponent",
+    "angular",
+    "react",
+    "vue",
+    "adorable-avatar"
+  ],
   "main": "dist/index.cjs.js",
   "module": "dist/custom-elements/index.js",
   "es2015": "dist/esm/index.mjs",
@@ -20,15 +28,13 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
-    "convert-images": "node ./src/imageConvertor.ts"
-  },
-  "dependencies": {
-    "@stencil/core": "^2.6.0",
-    "@stencil/sass": "^1.4.1"
+    "convert-images": "node ./imageConvertor.ts"
   },
   "license": "MIT",
   "devDependencies": {
+    "@stencil/core": "^2.8.1",
+    "@stencil/sass": "^1.4.1",
     "@stencil/angular-output-target": "0.0.7",
-    "@stencil/react-output-target": "0.0.9"
+    "@stencil/react-output-target": "0.1.0"
   }
 }
