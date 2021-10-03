@@ -34,7 +34,7 @@
     "typescript": "^3.3.4000"
   },
   "dependencies": {
-    "@adorable-avatar/core": "file:/home/bipoza/Dokumentuak/garapena/stenciljs/adorable-avatar/core"
+    "@adorable-avatar/core": "0.0.1"
   },
   "peerDependencies": {
     "react": "^16.7.0",

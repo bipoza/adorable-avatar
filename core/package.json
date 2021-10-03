@@ -30,13 +30,11 @@
     "generate": "stencil generate",
     "convert-images": "node ./imageConvertor.ts"
   },
-  "dependencies": {
-    "@stencil/core": "^2.6.0",
-    "@stencil/sass": "^1.4.1"
-  },
   "license": "MIT",
   "devDependencies": {
+    "@stencil/core": "^2.8.1",
+    "@stencil/sass": "^1.4.1",
     "@stencil/angular-output-target": "0.0.7",
-    "@stencil/react-output-target": "0.0.9"
+    "@stencil/react-output-target": "0.1.0"
   }
 }
