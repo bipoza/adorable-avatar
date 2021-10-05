@@ -1,1 +1,3 @@
 node_modules/
+.angular/**/dist
+.angular/**/__ivy_ngcc__
