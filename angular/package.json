@@ -1,6 +1,6 @@
 {
   "name": "@adorable-avatar/angular",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Adorable Avatar Angular component",
   "license": "MIT",
   "author": "bipoza",
@@ -30,12 +30,6 @@
     "validate": "npm i && npm run lint && npm run test && npm run build",
     "packagr": "ng-packagr -p ng-package.json"
   },
-  "module": "dist/fesm5.js",
-  "main": "dist/fesm5.js",
-  "types": "dist/core.d.ts",
-  "files": [
-    "dist/"
-  ],
   "dependencies": {
     "@adorable-avatar/core": "0.0.2",
     "tslib": "^1.9.3"
