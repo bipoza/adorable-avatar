@@ -1,13 +1,20 @@
 {
   "name": "@adorable-avatar/angular",
   "version": "0.0.2",
-  "description": "Adorable avatar Angular component",
+  "description": "Adorable Avatar Angular component",
   "license": "MIT",
   "author": "bipoza",
   "repository": {
     "type": "git",
     "url": "https://github.com/bipoza/adorable-avatar.git"
   },
+  "keywords": [
+    "stenciljs",
+    "webcomponent",
+    "angular",
+    "ionic",
+    "adorable-avatar"
+  ],
   "scripts": {
     "build": "npm run build.ng",
     "build.fesm": "rollup --config ./scripts/rollup.config.js",

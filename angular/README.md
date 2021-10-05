@@ -31,23 +31,8 @@ import { AdorableAvatarModule } from '@adorable-avatar/angular';
 export class AppModule { }
 ```
 
-## 3. Import required assets in angular.json
-
-```JSON
-"assets": [
-  "src/favicon.ico",
-  "src/assets",
-  // Add this config
-  {
-    "glob": "**/*",
-    "input": "./node_modules/@adorable-avatar/angular/assets",
-    "output": "/assets/"
-  }
-],
-```
-
-## 4. Use it!
+## 3. Use it!
 
 ```HTML
-<adorable-avatar name="bipoza" rounded></adorable-avatar>
+<adorable-avatar name="bipoza" shape="round"></adorable-avatar>
 ```
