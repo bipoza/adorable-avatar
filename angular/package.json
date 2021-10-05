@@ -1,8 +1,9 @@
 {
   "name": "@adorable-avatar/angular",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Adorable avatar Angular component",
   "license": "MIT",
+  "author": "bipoza",
   "repository": {
     "type": "git",
     "url": "https://github.com/bipoza/adorable-avatar.git"
@@ -29,7 +30,7 @@
     "dist/"
   ],
   "dependencies": {
-    "@adorable-avatar/core": "0.0.1",
+    "@adorable-avatar/core": "0.0.2",
     "tslib": "^1.9.3"
   },
   "devDependencies": {

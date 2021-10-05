@@ -1,1 +1,0 @@
-{"version":3,"file":"adorable-avatar-angular.d.ts","sources":["adorable-avatar-angular.d.ts"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA","sourcesContent":["/**\n * Generated bundle index. Do not edit.\n */\nexport * from './public-api';\nexport { ProxyCmp as ɵa } from './directives/angular-component-lib/utils';\n"]}

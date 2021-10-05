@@ -1,22 +1,53 @@
-# stencil-ds-angular-template
+# How to use it in Angular
 
-This is an example repo of building plugins.
+This is an example to use adorable-avatar with Angular
 
-## Step 1.
+## 1. Install the package
 
-- Update the `package.json` to have the correct package name for this repo.
-- Replace `component-library` under `dependencies` with your core stencil package name.
+```BASH
+$ npm install @adorable-avatar/angular --save
+```
 
-## Step 2.
+## 2. Import the module
 
-- Build your core stencil package.
+```TS
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-## Step 3.
+import { AppComponent } from './app.component';
+import { AdorableAvatarModule } from '@adorable-avatar/angular';
 
-- Update `src/component-library-module.ts`.
-  - You will need to import all of your components from `./directives/proxies`. Currently the file states `DemoComponent` as the only import. This will be replaced with the entire list.
-  -  Then update the `DECLARATIONS` const array to also list out all of the component names. It also currently contains `DemoComponent` as the only item, but this will need to be replaced with the entire list.
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AdorableAvatarModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
 
-## Step 4.
+## 3. Import required assets in angular.json
 
-- Run build on this package.
+```JSON
+"assets": [
+  "src/favicon.ico",
+  "src/assets",
+  // Add this config
+  {
+    "glob": "**/*",
+    "input": "./node_modules/@adorable-avatar/angular/assets",
+    "output": "/assets/"
+  }
+],
+```
+
+## 4. Use it!
+
+```HTML
+<adorable-avatar name="bipoza" rounded></adorable-avatar>
+```

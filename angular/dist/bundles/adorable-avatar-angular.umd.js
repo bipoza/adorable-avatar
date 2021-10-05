@@ -350,7 +350,7 @@
                     selector: 'adorable-avatar',
                     changeDetection: core.ChangeDetectionStrategy.OnPush,
                     template: '<ng-content></ng-content>',
-                    inputs: ['color', 'initials', 'name', 'rounded', 'size', 'src']
+                    inputs: ['color', 'name', 'shape', 'size', 'src', 'type']
                 },] }
     ];
     exports.AdorableAvatar.ctorParameters = function () { return [
@@ -360,7 +360,7 @@
     ]; };
     exports.AdorableAvatar = __decorate([
         ProxyCmp({
-            inputs: ['color', 'initials', 'name', 'rounded', 'size', 'src']
+            inputs: ['color', 'name', 'shape', 'size', 'src', 'type']
         })
     ], exports.AdorableAvatar);
 

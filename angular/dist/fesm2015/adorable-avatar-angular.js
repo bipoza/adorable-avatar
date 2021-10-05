@@ -54,7 +54,7 @@ AdorableAvatar.decorators = [
                 selector: 'adorable-avatar',
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 template: '<ng-content></ng-content>',
-                inputs: ['color', 'initials', 'name', 'rounded', 'size', 'src']
+                inputs: ['color', 'name', 'shape', 'size', 'src', 'type']
             },] }
 ];
 AdorableAvatar.ctorParameters = () => [
@@ -64,7 +64,7 @@ AdorableAvatar.ctorParameters = () => [
 ];
 AdorableAvatar = __decorate([
     ProxyCmp({
-        inputs: ['color', 'initials', 'name', 'rounded', 'size', 'src']
+        inputs: ['color', 'name', 'shape', 'size', 'src', 'type']
     })
 ], AdorableAvatar);
 

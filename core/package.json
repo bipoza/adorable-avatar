@@ -2,12 +2,14 @@
   "name": "@adorable-avatar/core",
   "version": "0.0.2",
   "description": "Adorable avatar web component core",
+  "author": "bipoza",
   "keywords": [
     "stenciljs",
     "webcomponent",
     "angular",
     "react",
     "vue",
+    "ionic",
     "adorable-avatar"
   ],
   "main": "dist/index.cjs.js",
